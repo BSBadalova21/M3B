@@ -21,4 +21,30 @@ void welcome()
 int main()
 {
     welcome();
+
+    int arrChoose[50];
+    int counter;
+    int tempChoose;
+    cout << endl;
+    cout << endl;
+    cout << "Choose your game: ";
+
+    for (int i = 0; i < 50; i++)
+    {
+        cin >> arrChoose[i];
+        if (arrChoose[i] <= 0) {
+            cout << "Incorrect input. Please input number between 1 to 3.";
+
+        }
+        else if (arrChoose[i] > 3) {
+            cout << "Incorrect input. Please input number between 1 to 3.";
+
+        }
+        else
+        {
+            tempChoose = arrChoose[i];
+            break;
+        }
+    }
+    cout << tempChoose;
 }
