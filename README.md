@@ -1,4 +1,8 @@
 <h1 align="center">M3B</h1>
+<p align = "center">
+  <img alt="logo" src="photos/logo/logo.png" width=300px>
+</p>
+
 <br>
 <p align = "center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/BSBadalova21/M3B?style=flat-square">
