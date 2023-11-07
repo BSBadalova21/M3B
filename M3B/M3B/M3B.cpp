@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <iomanip>
+#include <conio.h>
 
 using namespace std;
 
@@ -91,29 +92,44 @@ int main()
 
     switch (tempArrChoose) // switching the games
     {
+    case 1:
+    {
+        system("cls");
+        info();
+
+        cout << "DNA Info:" << endl;
+        cout << "A - T (Adenine - Thymine)" << endl;
+        cout << "G - C (Guanine - Cytosine)" << endl;
+        cout << endl;
+        cout << endl;
+        cout << "RNA Info:" << endl;
+        cout << "A - U (Adenine - Uracil)" << endl;
+        cout << "G - C (Same as DNA)";
+    } break;
+    case 2:
+    {
+        switch (tempDiffChoose) // switching the difficulty
+        {
         case 1:
         {
-            system("cls");
-            info();
-
-            cout << "DNA Info:" << endl;
-            cout << "A - T (Adenine - Thymine)" << endl;
-            cout << "G - C (Guanine - Cytosine)" << endl;
-            cout << endl; 
-            cout << endl;
-            cout << "RNA Info:" << endl;
-            cout << "A - U (Adenine - Uracil)" << endl;
-            cout << "G - C (Same as DNA)";
-        } break;
-        case 2:
+            cout << "test";
+        }
+        }
+    }
+    case 3:
+    {
+        int countOne = 0, countTwo = 4;
+        int j;
+        string dyhib[] = { "AB","aB","Ab","ab","ab","aB","AB","Ab" };
+        while (true)
         {
-            switch (tempDiffChoose) // switching the difficulty
+            j = 0;
+            /* Introduction : */
             {
-                case 1:
-                {
-                    cout << "test";
-                }
+                cout << setw(100) << "YOU HAVE ENTERED" << endl << setw(100) << "ECOLOGY CROSSING" << endl;
+                cout << "Your are currently a/n: Beginner Biologist" << endl;
             }
         }
+    }
     }
 }
