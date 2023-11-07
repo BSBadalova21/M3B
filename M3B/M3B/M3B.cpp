@@ -129,7 +129,91 @@ int main()
                 cout << setw(100) << "YOU HAVE ENTERED" << endl << setw(100) << "ECOLOGY CROSSING" << endl;
                 cout << "Your are currently a/n: Beginner Biologist" << endl;
             }
+            {
+                cout << "Your time starts now!(Hurry up!! Your Time is 10 seconds!)\n-----------------------------------------------------------------------\n\n";
+                for (int i = 1; i <= 4; i++)
+                {
+                    srand(time(0));
+                    cout << "Question:" << endl << dyhib[countOne] << " x " << dyhib[countTwo] << " = ";
+                    string numInput;
+                    time_t start = time(0);
+                    int y = 5;
+                    while (!kbhit())
+                    {
+                        if (abs(time(0) - start) > 10)
+                        {
+                            j = 1;
+                            break;
+                        }
+                    }
+                    if (j == 1)
+                    {
+                        cout << "Time's Up!!";
+                        j = 2;
+                    }
+                    else
+                    {
+                        cin >> numInput;
+                        if ((time(0) - start) > 10)
+                        {
+                            cout << "Time's Up!!";
+                            j = 2;
+                        }
+                        else if (i == 1)
+                        {
+                            if (numInput == "AaBb")
+                            {
+                                cout << "Good Job!!!\n\n";
+                            }
+                            else
+                            {
+                                cout << "Wrong Answer!!";
+                                j = 2;
+                            }
+                        }
+                        else if (i == 2)
+                        {
+                            if (numInput == "aaBB")
+                            {
+                                cout << "Good Job!!!\n\n";
+                            }
+                            else
+                            {
+                                cout << "Wrong Answer!!";
+                                j = 2;
+                            }
+                        }
+                        else if (i == 3)
+                        {
+                            if (numInput == "AABb")
+                            {
+                                cout << "Good Job!!!\n\n";
+                            }
+                            else
+                            {
+                                cout << "Wrong Answer!!";
+                                j = 2;
+                            }
+                        }
+                        else if (i == 4)
+                        {
+                            if (numInput == "Aabb")
+                            {
+                                cout << "Good Job!!!\n\n";
+                            }
+                            else
+                            {
+                                cout << "Wrong Answer!!";
+                                j = 2;
+                            }
+                        }
+                    }
+                    countOne++;
+                    countTwo++;
+                }
+            }
         }
+        if (j == 2) break;
     }
     }
 }
