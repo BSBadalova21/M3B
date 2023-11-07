@@ -138,7 +138,7 @@ int main()
                     string numInput;
                     time_t start = time(0);
                     int y = 5;
-                    while (!kbhit())
+                    while (!_kbhit())
                     {
                         if (abs(time(0) - start) > 10)
                         {
