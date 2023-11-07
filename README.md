@@ -34,8 +34,8 @@
 ## 👨🏻‍💻 Team Members
 | **Name** | **Role** | **Grade** |
 | :---:   | :---: | :---: |
-| Miroslav Ivanov| *Back-end developer* | 🟨 9A |
-| Bilyana Badalova | *Scrum Trainer*  | 🟥 9B |
-| Miroslav Chobanov | *Back-end developer*  | 🟩 9V |
-| Mariela Dimova |  *Front-end developer*  | 🟦 9G |
+| Miroslav Ivanov| *Back-end developer* | 🟨 10A |
+| Bilyana Badalova | *Scrum Trainer*  | 🟥 10B |
+| Miroslav Chobanov | *Back-end developer*  | 🟩 10V |
+| Mariela Dimova |  *Front-end developer*  | 🟦 10G |
 
