@@ -129,6 +129,7 @@ int main()
                 cout << setw(100) << "YOU HAVE ENTERED" << endl << setw(100) << "ECOLOGY CROSSING" << endl;
                 cout << "Your are currently a/n: Beginner Biologist" << endl;
             }
+            /* Ecology crossing */
             {
                 cout << "Your time starts now!(Hurry up!! Your Time is 10 seconds!)\n-----------------------------------------------------------------------\n\n";
                 for (int i = 1; i <= 4; i++)
