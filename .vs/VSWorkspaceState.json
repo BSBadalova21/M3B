@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\M3B"
+    "\\M3B",
+    "\\M3B\\M3B"
   ],
-  "SelectedNode": "\\M3B\\M3B.sln",
+  "SelectedNode": "\\M3B\\M3B\\M3B.cpp",
   "PreviewInSolutionExplorer": false
 }
