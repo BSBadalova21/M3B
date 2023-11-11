@@ -90,7 +90,19 @@ void thirdPlace()
     }
 }
 
+void dna()
+{
+    fstream newfile;
 
+    newfile.open("..\\..\\textFiles\\dna.txt", ios::in);
+    if (newfile.is_open()) {
+        string tp;
+        while (getline(newfile, tp)) {
+            cout << tp << endl;
+        }
+        newfile.close();
+    }
+}
 
 int main()
 {
@@ -155,7 +167,9 @@ int main()
     {
         system("cls");
         info();
-
+        dna();
+        cout << endl;
+        cout << endl;
         cout << "DNA Info:" << endl;
         cout << "A - T (Adenine - Thymine)" << endl;
         cout << "G - C (Guanine - Cytosine)" << endl;
@@ -163,7 +177,10 @@ int main()
         cout << endl;
         cout << "RNA Info:" << endl;
         cout << "A - U (Adenine - Uracil)" << endl;
-        cout << "G - C (Same as DNA)";
+        cout << "G - C (Same as DNA)" << endl;
+        cout << endl;
+        cout << endl;
+        dna();
     } break;
     case 2:
     {
