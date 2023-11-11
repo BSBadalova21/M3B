@@ -5,7 +5,6 @@
 
 <br>
 <p align = "center">
-    <img alt="GitHub milestones" src="https://img.shields.io/github/milestones/BSBadalova21/M3B?style=flat-square">
     <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/BSBadalova21/M3B?style=flat-square">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/BSBadalova21/M3B?style=flat-square">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BSBadalova21/M3B?style=flat-square">
