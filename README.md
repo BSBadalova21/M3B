@@ -25,8 +25,6 @@
     <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png" alt="MS Word logo" width=48px /></a>
     <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint logo" width=48px />
     <a href="https://www.microsoft.com/en-us/microsoft-365/excel"><img src="https://img.icons8.com/fluency/48/000000/microsoft-excel-2019.png" alt="MS Excel logo"/></a>
-    <a href="https://git-scm.com/"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/></a>
-    <img src="Website/dist/img/icons8-github-48.png#gh-dark-mode-only"/>
   </p> 
   
 ## 💼 Documents
