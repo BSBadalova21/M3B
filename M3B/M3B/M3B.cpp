@@ -24,15 +24,58 @@ void info()
 {
     fstream newfile;
 
-    newfile.open("..\\..\\textFiles\\info.txt", ios::in); //open a file to perform read operation using file object
-    if (newfile.is_open()) { //checking whether the file is open
+    newfile.open("..\\..\\textFiles\\info.txt", ios::in); 
+    if (newfile.is_open()) { 
         string tp;
-        while (getline(newfile, tp)) { //read data from file object and put it into string.
-            cout << setw(170) << tp << endl; //print the data of the string
+        while (getline(newfile, tp)) { 
+            cout << setw(170) << tp << endl; 
         }
-        newfile.close(); //close the file object.
+        newfile.close();
     }
 }
+
+void firstPlace()
+{
+    fstream newfile;
+
+    newfile.open("..\\..\\textFiles\\1stPlace.txt", ios::in); 
+    if (newfile.is_open()) {
+        string tp;
+        while (getline(newfile, tp)) { 
+            cout << tp << endl; 
+        }
+        newfile.close();
+    }
+}
+
+void secondPlace()
+{
+    fstream newfile;
+
+    newfile.open("..\\..\\textFiles\\2ndPlace.txt", ios::in);
+    if (newfile.is_open()) {
+        string tp;
+        while (getline(newfile, tp)) {
+            cout << tp << endl;
+        }
+        newfile.close();
+    }
+}
+void thirdPlace()
+{
+    fstream newfile;
+
+    newfile.open("..\\..\\textFiles\\3rdPlace.txt", ios::in);
+    if (newfile.is_open()) {
+        string tp;
+        while (getline(newfile, tp)) {
+            cout << tp << endl;
+        }
+        newfile.close();
+    }
+}
+
+
 
 int main()
 {
@@ -45,6 +88,7 @@ int main()
     cout << endl;
     cout << "1. Information" << endl;
     cout << "2. Replication (Game)" << endl;
+    cout << "3. Biology Crossing (Game)" << endl;
     cout << "Choose your game: ";
 
     for (int i = 0; i < 50; i++)
@@ -110,12 +154,49 @@ int main()
     {
         switch (tempDiffChoose) // switching the difficulty
         {
-        case 1:
+        case 1: // Game : Replication | Difficulty : Easy
         {
-            cout << "test";
+            int points = 0;
+            char answer[3];
+            char arr[3] = { 'G' , 'A', 'C' };
+            cout << "Your job is to pair perfectly the RNA to the DNA Matrix." << endl;
+            for (int i = 0; i < 3; i++)
+            {
+                cout << arr[i] << " ";
+            }
+            cout << " | Write the  Nucleotide Bases properly." << endl;
+            for (int i = 0; i < 3; i++)
+            {
+                cin >> answer[i];
+            }
+            cout << endl;
+            for (int i = 0; i < 3; i++)
+            {
+                if (answer[i] == 'C' && arr[i] == 'G')
+                { 
+                    points += 2;
+                }
+                else if (answer[i] == 'U' && arr[i] == 'A')
+                {
+                    points += 2;
+                }
+                else if (answer[i] =='G' && arr[i] == 'C')
+                {
+                    points += 2;
+                }
+            }
+            if (points == 2)   // Rewards
+                thirdPlace();
+
+            else if (points == 4)
+                secondPlace();
+
+            else if (points == 6)
+                firstPlace();
+
         }
         }
-    }
+    } break;
     case 3:
     {
         int countOne = 0, countTwo = 4;
