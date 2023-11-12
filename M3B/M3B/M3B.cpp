@@ -51,16 +51,40 @@ int main()
         dna();
         informationText();
         dna();
+        int check;
+        cout << "If you want to go back to the main menu type '1'." << endl;
+        cin >> check;
+        if (check = 1) {
+            system("cls");
+            main();
+        }
+            
+
+
     } break;
     case 2: // 2.Replication
     {
         system("cls");
         replication();
         secondGame();
+        int check;
+        cout << "If you want to go back to the main menu type '1'." << endl;
+        cin >> check;
+        if (check = 1) {
+            system("cls");
+            main();
+        }
     } break;
     case 3: // 3.Biology Crossing
     {
         thirdGame();
+        int check;
+        cout << "If you want to go back to the main menu type '1'." << endl;
+        cin >> check;
+        if (check = 1) {
+            system("cls");
+            main();
+        }
     } break;
     }
 }
