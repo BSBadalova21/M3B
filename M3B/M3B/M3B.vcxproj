@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SecondGame.cpp" />
+    <ClCompile Include="Information.cpp" />
     <ClCompile Include="M3B.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ThirdGame.cpp" />
+    <ClCompile Include="textFiles.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SecondGame.h" />
+    <ClInclude Include="Information.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="ThirdGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
