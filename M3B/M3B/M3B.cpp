@@ -273,16 +273,18 @@ int main()
     } break;
     case 3:
     {
-        int countOne = 0, countTwo = 4;
-        int j;
+        int countOne = 0, countTwo = 4, countRight=0;
+        int j=0;
         string dyhib[] = { "AB","aB","Ab","ab","ab","aB","AB","Ab" };
-        while (true)
+        while (j!=2)
         {
-            j = 0;
+            if (countRight == 4)
+            {
+                break;
+            }
             /* Introduction : */
             {
                 cout << setw(100) << "YOU HAVE ENTERED" << endl << setw(100) << "ECOLOGY CROSSING" << endl;
-                cout << "Your are currently a/n: Beginner Biologist" << endl;
             }
             /* Ecology crossing */
             {
@@ -320,6 +322,7 @@ int main()
                             if (numInput == "AaBb")
                             {
                                 cout << "Good Job!!!\n\n";
+                                countRight++;
                             }
                             else
                             {
@@ -332,6 +335,7 @@ int main()
                             if (numInput == "aaBB")
                             {
                                 cout << "Good Job!!!\n\n";
+                                countRight++;
                             }
                             else
                             {
@@ -344,6 +348,7 @@ int main()
                             if (numInput == "AABb")
                             {
                                 cout << "Good Job!!!\n\n";
+                                countRight++;
                             }
                             else
                             {
@@ -356,6 +361,7 @@ int main()
                             if (numInput == "Aabb")
                             {
                                 cout << "Good Job!!!\n\n";
+                                countRight++;
                             }
                             else
                             {
@@ -366,10 +372,10 @@ int main()
                     }
                     countOne++;
                     countTwo++;
+                    if (j == 2) break;
                 }
             }
         }
-        if (j == 2) break;
     }
     }
 }
