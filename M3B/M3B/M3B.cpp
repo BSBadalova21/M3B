@@ -60,15 +60,15 @@ void secondGame()
         cout << "Your job is to pair perfectly the RNA to the DNA Matrix." << endl;
         for (int i = 0; i < 3; i++)
         {
-            cout << basesEasy[i] << " ";
+            cout << basesEasy[i] << " "; // Outputs the DNA Matrix.
         }
         cout << " | Write the  Nucleotide Bases properly." << endl;
         for (int i = 0; i < 3; i++)
         {
-            cin >> answer[i];
+            cin >> answer[i];  // Inputs the RNA Matrix as an answer.
         }
         cout << endl;
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++) // For loop for checking if the DNA and RNA Matches also adding points if it's correct.
         {
             if (answer[i] == 'C' && basesEasy[i] == 'G')
             {
@@ -83,7 +83,7 @@ void secondGame()
                 points++;
             }
         }
-        if (points == 1)   // Rewards
+        if (points == 1)   // Outputs the reward.
             thirdPlace();
         else if (points == 2)
             secondPlace();
@@ -193,7 +193,7 @@ void thirdGame()
         {
             break;
         }
-        /* Ecology crossing */
+        /* Biology crossing */
         {
             cout << "Your time starts now!(Hurry up!! Your Time is 10 seconds!)\n-----------------------------------------------------------------------\n\n";
             for (int i = 1; i <= 4; i++)
@@ -293,7 +293,7 @@ void thirdGame()
     
 }
 
-void informationText() {
+void informationText() { // 1.Information - Menu
     cout << endl;
     cout << endl;
     cout << "DNA Info:" << endl;
@@ -308,23 +308,26 @@ void informationText() {
     cout << endl;
 }
 
-
-
-int main()
+void chooseGame() //Main menu
 {
-    nameOfTheGame();
-
     cout << endl;
     cout << endl;
     cout << "1. Information" << endl;
     cout << "2. Replication (Game)" << endl;
     cout << "3. Biology Crossing (Game)" << endl;
     cout << "Choose your game: ";
+}
+
+int main()
+{
+    nameOfTheGame();
+    chooseGame();
+    
 
     for (int i = 0; i < 50; i++)
     {
         cin >> arrChoose[i];
-        if (arrChoose[i] <= 0) {
+        if (arrChoose[i] <= 0) {   //Checks if the input is correct
             cout << "Incorrect input. Please input number between 1 and 3.";
         }
         else if (arrChoose[i] > 3) {
@@ -343,12 +346,10 @@ int main()
         }
     }
 
-    
 
-
-    switch (tempArrChoose) // switching the games
+    switch (tempArrChoose) // Switching the games
     {
-    case 1:
+    case 1: // 1.Information
     {
         system("cls");
         info();
@@ -356,13 +357,13 @@ int main()
         informationText();
         dna();
     } break;
-    case 2:
+    case 2: // 2.Replication
     {
         system("cls");
         replication();
         secondGame();
     } break;
-    case 3:
+    case 3: // 3.Biology Crossing
     {
         thirdGame();
     } break;
