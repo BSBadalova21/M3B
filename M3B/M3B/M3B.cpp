@@ -336,7 +336,7 @@ int main()
                             }
                             else
                             {
-                                cout << "Wrong Answer!!";
+                                cout << "Wrong Answer!!" << endl << "Unfortunately you don't win a medal. :(";
                                 j = 2;
                             }
                         }
@@ -349,7 +349,7 @@ int main()
                             }
                             else
                             {
-                                cout << "Wrong Answer!!";
+                                cout << "Wrong Answer!!" << endl << "Unfortunately you don't win a medal. :(";
                                 j = 2;
                             }
                         }
@@ -362,7 +362,7 @@ int main()
                             }
                             else
                             {
-                                cout << "Wrong Answer!!";
+                                cout << "Wrong Answer!!" << endl << "Unfortunately you don't win a medal. :(";
                                 j = 2;
                             }
                         }
@@ -375,7 +375,7 @@ int main()
                             }
                             else
                             {
-                                cout << "Wrong Answer!!";
+                                cout << "Wrong Answer!!" << endl << "Unfortunately you don't win a medal. :(";
                                 j = 2;
                             }
                         }
