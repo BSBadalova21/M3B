@@ -18,16 +18,16 @@
     <ClCompile Include="M3B.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
+    <ClCompile Include="menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Information.cpp">
+    <ClCompile Include="information.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SecondGame.cpp">
+    <ClCompile Include="firstGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ThirdGame.cpp">
+    <ClCompile Include="secondGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="textFiles.cpp">
@@ -35,16 +35,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Menu.h">
+    <ClInclude Include="menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Information.h">
+    <ClInclude Include="information.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SecondGame.h">
+    <ClInclude Include="firstGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ThirdGame.h">
+    <ClInclude Include="secondGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

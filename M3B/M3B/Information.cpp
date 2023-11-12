@@ -1,4 +1,4 @@
-#include "Information.h"
+#include "information.h"
 
 void informationText() 
 { // 1.Information - Menu

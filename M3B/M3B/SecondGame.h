@@ -1,8 +1,9 @@
 #pragma once
-#include "textFiles.h"
-#include <string>
 #include <iostream>
+#include <string>
+#include "textFiles.h"
 
 using namespace std;
+
 
 void secondGame();

@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Menu.h"
 #include "Information.h"
-#include "SecondGame.h"
-#include "ThirdGame.h"
+#include "firstGame.h"
+#include "secondGame.h"
 #include "textFiles.h"
 
 using namespace std;
@@ -10,7 +10,7 @@ using namespace std;
 int tempArrChoose;
 int arrChoose[50];
 
-void CheckInput()
+void checkInput()
 {
     for (int i = 0; i < 50; i++)
     {
@@ -40,7 +40,7 @@ int main()
     nameOfTheGame();
     chooseGame();
 
-    CheckInput();
+    checkInput();
 
     switch (tempArrChoose) // Switching the games
     {
@@ -54,34 +54,35 @@ int main()
         int check;
         cout << "If you want to go back to the main menu type '1'." << endl;
         cin >> check;
-        if (check = 1) {
+        if (check == 1)
+        {
             system("cls");
             main();
         }
-            
-
 
     } break;
     case 2: // 2.Replication
     {
         system("cls");
         replication();
-        secondGame();
+        firstGame();
         int check;
         cout << "If you want to go back to the main menu type '1'." << endl;
         cin >> check;
-        if (check = 1) {
+        if (check == 1)
+        {
             system("cls");
             main();
         }
     } break;
     case 3: // 3.Biology Crossing
     {
-        thirdGame();
+        secondGame();
         int check;
         cout << "If you want to go back to the main menu type '1'." << endl;
         cin >> check;
-        if (check = 1) {
+        if (check == 1)
+        {
             system("cls");
             main();
         }
