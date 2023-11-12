@@ -47,7 +47,19 @@ void replication()
         newfile.close();
     }
 }
+void game3()
+{
+    fstream newfile;
 
+    newfile.open("..\\..\\textFiles\\biology.txt", ios::in);
+    if (newfile.is_open()) {
+        string tp;
+        while (getline(newfile, tp)) {
+            cout << setw(130) << tp << endl;
+        }
+        newfile.close();
+    }
+}
 
 void firstPlace()
 {
@@ -273,6 +285,8 @@ int main()
     } break;
     case 3:
     {
+        system("cls");
+        game3();
         int countOne = 0, countTwo = 4, countRight=0;
         int j=0;
         string dyhib[] = { "AB","aB","Ab","ab","ab","aB","AB","Ab" };
@@ -281,10 +295,6 @@ int main()
             if (countRight == 4)
             {
                 break;
-            }
-            /* Introduction : */
-            {
-                cout << setw(100) << "YOU HAVE ENTERED" << endl << setw(100) << "ECOLOGY CROSSING" << endl;
             }
             /* Ecology crossing */
             {
@@ -375,6 +385,11 @@ int main()
                     if (j == 2) break;
                 }
             }
+        }
+        if (countRight == 4)
+        {
+            cout << endl << "YOU HAVE WON THE GAME!" << endl << "HERE'S YOUR MEDAL!" << endl;
+            firstPlace();
         }
     }
     }
