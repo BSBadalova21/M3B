@@ -12,7 +12,7 @@
 </p>
 
 ## 📋 Description
-We are Team M3B. We will present our game "Bio Tech" which is composed of two games. The goal of the first game is to complete the replication process. And the purpose of the second is to learn to solve problems with genetics.
+We are Team M3B. We will present our game "Bio Tech" which is composed of two games. The goal of the first game is to complete the replication process. And the purpose of the second is to learn to solve problems with genetics.of two games. The goal of the first game is to complete the replication process. And the purpose of the second is to learn to solve problems with genetics.
 ## 🚀 Languages 
   <p align="left"> 
   <a href="https://www.cplusplus.com/"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++"/></a>
