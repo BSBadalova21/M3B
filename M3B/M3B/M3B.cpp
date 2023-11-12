@@ -1,8 +1,8 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <iomanip>
 #include <conio.h>
+#include "textFiles.h"
 
 using namespace std;
 
@@ -12,48 +12,7 @@ int tempDiffChoose;
 int tempArrChoose;
 
 
-void nameOfTheGame()
-{
-    fstream newfile;
 
-    newfile.open("..\\..\\textFiles\\nameOfTheGame.txt", ios::in); //open a file to perform read operation using file object
-    if (newfile.is_open()) { //checking whether the file is open
-        string tp;
-        while (getline(newfile, tp)) { //read data from file object and put it into string.
-            cout << setw(135) << tp << endl; //print the data of the string
-        }
-        newfile.close(); //close the file object.
-    }
-}
-
-void info()
-{
-    fstream newfile;
-
-    newfile.open("..\\..\\textFiles\\info.txt", ios::in); 
-    if (newfile.is_open()) { 
-        string tp;
-        while (getline(newfile, tp)) { 
-            cout << setw(135) << tp << endl; 
-        }
-        newfile.close();
-    }
-}
-
-void replication()
-{
-    fstream newfile;
-
-    newfile.open("..\\..\\textFiles\\replication.txt", ios::in);
-    if (newfile.is_open()) {
-        string tp;
-        while (getline(newfile, tp)) {
-            cout << setw(135) << tp << endl;
-        }
-        newfile.close();
-    }
-    
-}
 void game3()
 {
     fstream newfile;
@@ -68,60 +27,7 @@ void game3()
     }
 }
 
-void firstPlace()
-{
-    fstream newfile;
 
-    newfile.open("..\\..\\textFiles\\1stPlace.txt", ios::in); 
-    if (newfile.is_open()) {
-        string tp;
-        while (getline(newfile, tp)) { 
-            cout << tp << endl; 
-        }
-        newfile.close();
-    }
-}
-
-void secondPlace()
-{
-    fstream newfile;
-
-    newfile.open("..\\..\\textFiles\\2ndPlace.txt", ios::in);
-    if (newfile.is_open()) {
-        string tp;
-        while (getline(newfile, tp)) {
-            cout << tp << endl;
-        }
-        newfile.close();
-    }
-}
-void thirdPlace()
-{
-    fstream newfile;
-
-    newfile.open("..\\..\\textFiles\\3rdPlace.txt", ios::in);
-    if (newfile.is_open()) {
-        string tp;
-        while (getline(newfile, tp)) {
-            cout << tp << endl;
-        }
-        newfile.close();
-    }
-}
-
-void dna()
-{
-    fstream newfile;
-
-    newfile.open("..\\..\\textFiles\\dna.txt", ios::in);
-    if (newfile.is_open()) {
-        string tp;
-        while (getline(newfile, tp)) {
-            cout << tp << endl;
-        }
-        newfile.close();
-    }
-}
 void secondGame()
 {
     cout << "1. Easy" << endl;
@@ -189,44 +95,88 @@ void secondGame()
         }break;
         case 2:  // Game : Replication | Difficulty : Medium
         {
-        int points = 0;
-        char* answer = new char[5];
-        char basesMedium[5] = { 'A', 'C', 'A', 'G', 'C' };
-        cout << "Your job is to pair perfectly the RNA to the DNA Matrix." << endl;
+            int points = 0;
+            char* answer = new char[5];
+            char basesMedium[5] = { 'A', 'C', 'A', 'G', 'C' };
+            cout << "Your job is to pair perfectly the RNA to the DNA Matrix." << endl;
 
 
-        for (int i = 0; i < 5; i++)
-            cout << basesMedium[i] << " "; // Outputs the DNA Matrix.
+            for (int i = 0; i < 5; i++)
+                cout << basesMedium[i] << " "; // Outputs the DNA Matrix.
 
-        cout << " | Write the  Nucleotide Bases properly." << endl;
+            cout << " | Write the  Nucleotide Bases properly." << endl;
 
-        for (int i = 0; i < 5; i++)
-            cin >> answer[i];   // Inputs the RNA Matrix as an answer.
+            for (int i = 0; i < 5; i++)
+                cin >> answer[i];   // Inputs the RNA Matrix as an answer.
 
-        cout << endl;
-        for (int i = 0; i < 5; i++) // For loop for checking if the DNA and RNA Matches also adding points if it's correct.
+            cout << endl;
+            for (int i = 0; i < 5; i++) // For loop for checking if the DNA and RNA Matches also adding points if it's correct.
+            {
+                if (answer[i] == 'C' && basesMedium[i] == 'G')
+                    points++;
+
+                else if (answer[i] == 'U' && basesMedium[i] == 'A')
+                    points++;
+
+                else if (answer[i] == 'G' && basesMedium[i] == 'C')
+                    points++;
+            }
+            if (points == 1 || points == 2)   // Outputs the reward.
+                thirdPlace();
+
+            else if (points == 3 || points == 4)
+                secondPlace();
+
+            else if (points == 5)
+                firstPlace();
+
+            delete[] answer;
+
+        }break;
+        case 3:
         {
-            if (answer[i] == 'C' && basesMedium[i] == 'G')
-                points++;
+            int points = 0;
+            char* answer = new char[7];
+            char basesHard[7] = { 'G', 'A', 'C', 'A', 'G', 'C', 'A' };
+            cout << "Your job is to pair perfectly the RNA to the DNA Matrix." << endl;
 
-            else if (answer[i] == 'U' && basesMedium[i] == 'A')
-                points++;
 
-            else if (answer[i] == 'G' && basesMedium[i] == 'C')
-                points++;
-        }
-        if (points == 1 || points == 2)   // Outputs the reward.
-            thirdPlace();
+            for (int i = 0; i < 7; i++)
+                cout << basesHard[i] << " "; // Outputs the DNA Matrix.
 
-        else if (points == 3 || points == 4)
-            secondPlace();
+            cout << " | Write the  Nucleotide Bases properly." << endl;
 
-        else if (points == 5)
-            firstPlace();
+            for (int i = 0; i < 7; i++)
+                cin >> answer[i];   // Inputs the RNA Matrix as an answer.
 
-        delete[] answer;
+            cout << endl;
+            for (int i = 0; i < 7; i++) // For loop for checking if the DNA and RNA Matches also adding points if it's correct.
+            {
+                if (answer[i] == 'C' && basesHard[i] == 'G')
+                    points++;
 
-        }
+                else if (answer[i] == 'U' && basesHard[i] == 'A')
+                    points++;
+
+                else if (answer[i] == 'G' && basesHard[i] == 'C')
+                    points++;
+            }
+            if (points <= 1)
+                cout << "You are not good enough!";
+            else if (points == 2 || points == 4) {   // Outputs the reward.
+                thirdPlace();
+                dna();
+            }
+            else if (points == 5 || points == 6) {
+                secondPlace();
+                dna();
+            }   
+            else if (points == 7) {
+                firstPlace();
+                dna();
+            }
+            delete[] answer;
+        }break;
     }
     
 }
