@@ -213,7 +213,7 @@ void thirdGame()
                 }
                 if (j == 1)
                 {
-                    cout << "Time's Up!!";
+                    cout << endl << "Time's Up!!";
                     j = 2;
                 }
                 else
@@ -221,7 +221,7 @@ void thirdGame()
                     cin >> numInput;
                     if ((time(0) - start) > 10)
                     {
-                        cout << "Time's Up!!";
+                        cout << endl << "Time's Up!!";
                         j = 2;
                     }
                     else if (i == 1)

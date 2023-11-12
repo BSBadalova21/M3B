@@ -1,3 +1,2 @@
-﻿  M3B.cpp
-C:\Users\User\source\repos\M3B\M3B\M3B\M3B.cpp(136,27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  LINK : C:\Users\User\source\repos\M3B\M3B\x64\Debug\M3B.exe not found or not built by the last incremental link; performing full link
   M3B.vcxproj -> C:\Users\User\source\repos\M3B\M3B\x64\Debug\M3B.exe
