@@ -31,7 +31,10 @@ We are Team M3B. We will present our game "Bio Tech" which is composed of two ga
   </p> 
   
 ## 💼 Documents
-
+- [Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/bsbadalova21_codingburgas_bg/EQU7ZIC0bkFBoSBHNlR8NOYBN22KNMWBdQ4KyufAlQKtkg?e=DUJCXN)
+- [Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/bsbadalova21_codingburgas_bg/EezXTuYLS1VGq69cIaJA1ioBaQai0fKEWdeimTbGqPW5yA?e=KBavYK)
+- [QA - Test Plan](https://codingburgas-my.sharepoint.com/:w:/g/personal/bsbadalova21_codingburgas_bg/EdW00GIRG5dBuuaezHHsI3wBn_u_F_OuSXd1AlosLeJvZw?e=hllMKu)
+- [QA - Documentation](https://codingburgas-my.sharepoint.com/:x:/g/personal/bsbadalova21_codingburgas_bg/EcNA5UX8zBtKtL-czNmzACcBPpGZab-eJYYpsR5f3kJLcA?e=EKwbme)
 ## 👨🏻‍💻 Team Members
 | **Name** | **Role** | **Grade** |
 | :---:   | :---: | :---: |
