@@ -1,6 +1,6 @@
 <h1 align="center">M3B</h1>
 <p align = "center">
-  <img alt="logo" src="photos/logo/logo.png" width=300px>
+  <img alt="logo" src="photos/logo/Logo - MB.png" width=300px>
 </p>
 
 <br>
